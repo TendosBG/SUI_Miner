@@ -5,4 +5,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+}
+
+#miner {
+  left: 46.5vw;
+  top: 10.5vh;
+  position: relative;
 }
