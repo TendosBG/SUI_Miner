@@ -4,12 +4,19 @@ import Mine1 from './components/Mine1'
 import Mine2 from './components/Mine2'
 import Mines from './components/Mines'
 import Menu from './components/Menu'
+import React from 'react';
+import DrillAnimation from './DrillAnimation';
+import MinerAnimation from './MinerAnimation';
+import CartAnimation from './CartAnimation';
+import ManagerAnimation from './ManagerAnimation';
 
 
 function App() {
   return (
     
     <>
+    
+
     <Router>
       <Menu/>
       <Routes>
@@ -22,8 +29,11 @@ function App() {
       </Routes>
     </Router>
       <div id="gameContainer">
-        <canvas></canvas>
-        <script src='main.js'></script>
+      <DrillAnimation />
+      <MinerAnimation />
+      <CartAnimation />
+      <ManagerAnimation />
+    
         <Mines/>
         <Mine1/>
         <Mine2/>

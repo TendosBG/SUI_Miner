@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react';
 
-const ImageAnimation: React.FC = () => {
+const MinerAnimation: React.FC = () => {
   const [frameIndex, setFrameIndex] = useState(0);
 
   // Tableau contenant les chemins vers les images
   const frames = [
-    'drill1.png',
-    'drill(2).png',
-    'drill(3).png',
+    'miner/miner2.png',
+    'miner/miner1.png', 
+    'miner/miner4.png',
   ];
 
   useEffect(() => {
     const interval = setInterval(() => {
       // Passe à l'image suivante toutes les 200ms
       setFrameIndex((prevFrame) => (prevFrame + 1) % frames.length);
-    }, 1000); // Change l'image toutes les 200ms
+    }, 500); // Change l'image toutes les 200ms
 
     // Nettoyage de l'intervalle lorsque le composant est démonté
     return () => clearInterval(interval);
@@ -25,11 +25,11 @@ const ImageAnimation: React.FC = () => {
       {/* Affiche l'image en fonction de l'index actuel */}
       <img
         src={frames[frameIndex]}
-        alt="Animation Frame"
-        style={{ width: '100px', height: '100px' }} // Ajustez la taille de l'image selon vos besoins
+        alt="Miner Animation Frame"
+        style={{ width: '20px', height: '20px' }} // Ajustez la taille de l'image selon vos besoins
       />
     </div>
   );
 };
 
-export default ImageAnimation;
+export default MinerAnimation;
