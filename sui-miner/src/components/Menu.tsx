@@ -5,12 +5,13 @@ import './Menu.css'; // Assurez-vous de créer un fichier CSS pour styliser le m
 const Menu: React.FC = () => {
     return (
         <div className="menu">
+            <h1>SUI Miner</h1>
             <ul>
-                <li><Link to="/profile">Profile</Link></li>
-                <li><Link to="/shop">Shop</Link></li>
-                <li><Link to="/success">Success</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
+                <li><Link to="/">Profile</Link></li>
+                <li><Link to="/">Shop</Link></li>
+                <li><Link to="/">Success</Link></li>
+                <li><Link to="/">About</Link></li>
+                <li><Link to="/">Contact</Link></li>
             </ul>
         </div>
     );

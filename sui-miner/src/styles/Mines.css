@@ -1,8 +1,8 @@
 .mines-background {
-    width: 100vw;
-    height: 55vh;
-    background-image: url('../images/MineHaut.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+  width: 80vw; /* Adjust width for scaling properly */
+  height: 33vw; /* Keep height at 50% of the viewport height */
+  background-image: url('../images/MineHaut.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

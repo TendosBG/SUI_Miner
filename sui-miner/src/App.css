@@ -1,0 +1,14 @@
+#root {
+    display: flex;
+}
+
+#gameContainer{
+    display: flex ;
+    flex-direction: column;
+
+
+}
+
+#gameContainer canvas {
+    display: none;
+}
