@@ -1,21 +1,23 @@
-import './App.css'
-import Mine1 from './components/Mine1'
-import Mine2 from './components/Mine2'
-import Mines from './components/Mines'
+import './App.css';
+import Mine1 from './components/Mine1';
+import Mine2 from './components/Mine2';
+import Mines from './components/Mines';
+import ImageAnimation from './SpriteAnimation';
+
 
 function App() {
-
-
   return (
+    
     <>
-      <canvas></canvas>
-      <script src='main.js'></script>
-      <Mines></Mines>
-      <Mine1></Mine1>
-      <Mine2></Mine2>
+    <div>
+      <h1>Image Animation</h1>
+      <ImageAnimation/>
+    </div>
+      <Mines />
+      <Mine1 />
+      <Mine2 />
     </>
-
-  )
+  );
 }
 
-export default App
+export default App;
