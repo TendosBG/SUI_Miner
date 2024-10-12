@@ -8,6 +8,8 @@ function App() {
 
   return (
     <>
+      <canvas></canvas>
+      <script src='main.js'></script>
       <Mines></Mines>
       <Mine1></Mine1>
       <Mine2></Mine2>
