@@ -20,7 +20,7 @@
     margin: auto; /* Centre horizontalement */
     position: fixed; /* Pour le centrer verticalement, vous devez également définir la hauteur du parent */
     top: 25px; /* Pour le centrer verticalement */
-    left: 55vw;
+    left: 54vw;
     border: solid 3.2px white;
     border-radius: 55px;
 }

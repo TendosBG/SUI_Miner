@@ -4,7 +4,7 @@ import Mine1 from './components/Mine1'
 import Mine2 from './components/Mine2'
 import Mines from './components/Mines'
 import Menu from './components/Menu'
-import DisplayAmountVbux from './components/displayAmountVbux';
+
 
 
 function App() {
