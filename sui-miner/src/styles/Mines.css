@@ -1,0 +1,8 @@
+.mines-background {
+    width: 100vw;
+    height: 55vh;
+    background-image: url('../images/MineHaut.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
