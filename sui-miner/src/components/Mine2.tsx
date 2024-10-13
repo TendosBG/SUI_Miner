@@ -7,10 +7,10 @@ const Mine2: React.FC = () => {
   const level = 1;
   return (
     <div className="mine2-background">
-      <p className='level'>LVL {level}</p>
       <DrillAnimation />
       <ManagerAnimation />
       {/* Contenu du composant */}
+      <p className='level'>LVL {level}</p>
     </div>
   );
 };

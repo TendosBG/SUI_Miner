@@ -12,15 +12,26 @@
 #gameContainer canvas {
     display: none;
 }
+.miner {
+    left:58%;
+    position: relative;
+    top: 30%;
+}
+
+.drill {
+    left:57%;
+    position: relative;
+    top: 30%;
+}
 
 .manager {
-    left:22vw;
+    left:28%;
     position: relative;
-    top: 4.5vh;
+    top: 14.2%;
   }
 
   p.level {
     left: 12vw;
     position: relative;
-    top: -14vh;
+    top: -40%;
   }

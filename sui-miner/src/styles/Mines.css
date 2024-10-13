@@ -13,7 +13,7 @@
   width: 100px;
   height: 100px;
   left: 30vw; /* Start at 30% of the viewport width */
-  top:58vh;
+  top:86%;
   position: relative;
   animation: moveRight 4.2s infinite alternate; /* 3 secondes pour une animation infinie */
 }
