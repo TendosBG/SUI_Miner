@@ -1,0 +1,16 @@
+.mine2-background {
+  width: 80vw; /* Change to scale based on container or viewport */
+  height: 33vh;
+  background-image: url('../images/uneMine.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#drill {
+  left: 45vw;
+  top: 10.5vh;
+  position: relative;
+}
+
+

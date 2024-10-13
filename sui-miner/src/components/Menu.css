@@ -1,0 +1,48 @@
+.menu ul {
+    position: fixed;
+padding-top: 80px;
+}
+/* Menu.css */
+
+.menu {
+    background-color: #f8f9fa;
+    width: 350px;
+    
+    font-size: 3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    color: #63A8F0; 
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.menu h1 {
+    font-size: 2.6rem;
+    padding-left: 35px;
+    position: fixed;
+}
+
+.menu li {
+    list-style: none;
+    
+}
+
+.menu-item {
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #194370;
+}

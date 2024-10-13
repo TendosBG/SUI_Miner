@@ -1,0 +1,16 @@
+.mine1-background {
+  width: 80vw; /* Make the width scale based on the parent container */
+  height: 33vh; /* Height still based on the viewport height */
+  background-image: url('../images/uneMine.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+#miner {
+  left: 46.5vw;
+  top: 10.5vh;
+  position: relative;
+}
+

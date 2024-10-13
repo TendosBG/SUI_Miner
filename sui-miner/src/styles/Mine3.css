@@ -1,0 +1,33 @@
+.mine3-background {
+    width: 80vw; /* Change to scale based on container or viewport */
+    height: 33vh;
+    background-image: url('../images/uneMine.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+.mine3-background img {
+    display: none;
+}
+
+.Locked{
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: grayscale(80%);
+}
+
+.Locked .imgLock{
+    display:block;
+    filter: grayscale(0%);
+    width: 100px;
+    height: 100px;
+    align-items: center center;
+    top: 20%;
+    left: 46%;
+    position:absolute;
+}
+
+.Locked .manager {
+    top: 11vh;
+}
