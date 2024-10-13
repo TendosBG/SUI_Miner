@@ -1,6 +1,7 @@
 #root {
     display: flex;
-    overflow-x: hidden;;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #gameContainer{
@@ -31,12 +32,46 @@
   }
 
   p.level {
-    left: 12vw;
+    left: 10.8vw;
     position: relative;
-    top: -40%;
+    top: -35%;
     color: white;
   }
+  p.levelminer {
+    left: 66.6vw;
+    position: relative;
+    top: -50%;
+    color: white;
+  }
+  button.buttonMiner {
+    left: 65vw;
+    position: relative;
+    top: -50%;
+    color: white;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    align-items: center center;
+    background-color: #3E3D4C;
+  }
+  button.buttonMiner:hover {
+    border: solid 2px white;
+  }
 
+  button.buttonManager {
+    left: 4vw;
+    position: relative;
+    top: -50%;
+    color: white;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;   
+    background-color: #3E3D4C;
+    border: white;
+  }
+  button.buttonManager:hover {
+    border: solid 2px white;
+  }
 
 #flag2 p {
     font-size: 1.2rem;

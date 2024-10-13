@@ -28,12 +28,13 @@ const Mine3= ({x,y,z,a,handleman,handleame} : Props) => {
        
         <button className='imgLock' onClick={toggleLock} />
       {/* Contenu du composant */}
-      <p className='level imglock'>LVL {y}</p>
-      <button className='imglock' onClick={handleame}>
-        {x} 
+      <p className='level'>LvL {a}</p>
+      <p className='levelminer'>LvL {y}</p>
+      <button className='buttonMiner' onClick={handleame}>
+        {x}
       </button>
-      <button className='imglock' onClick={handleman}>
-        Acheter un manager pour la mine 1({z} pièces) Level : ({a})
+      <button className='buttonManager' onClick={handleman}>
+        {z} 
       </button>
     </div>
   );

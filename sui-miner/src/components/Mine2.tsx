@@ -20,12 +20,13 @@ const Mine2= ({x,y,z,a,handleman,handleame}: Props) => {
       <DrillAnimation />
       <ManagerAnimation />
       {/* Contenu du composant */}
-      <p className='level'>LVL {y}</p>
-      <button onClick={handleame}>
-        {x} 
+      <p className='level'>LvL {a}</p>
+      <p className='levelminer'>LvL {y}</p>
+      <button className='buttonMiner' onClick={handleame}>
+        {x}
       </button>
-      <button onClick={handleman}>
-        Acheter un manager pour la mine 1({z} pièces) Level : ({a})
+      <button className='buttonManager' onClick={handleman}>
+        {z} 
       </button>
     </div>
   );
