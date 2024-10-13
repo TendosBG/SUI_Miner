@@ -13,14 +13,14 @@
     font-weight: 700;
     padding-top: 5px;
     padding-bottom: 5px;
-    color:white ;
+    color:#FFF ;
     padding-right: 80px;
     padding-left: 80px;
     margin: auto; /* Centre horizontalement */
     position: fixed; /* Pour le centrer verticalement, vous devez également définir la hauteur du parent */
     top: 25px; /* Pour le centrer verticalement */
     left: 25vw;
-    border: solid 3.2px white;
+    border: solid 3.2px #FFF;
     border-radius: 55px;
 }
 
