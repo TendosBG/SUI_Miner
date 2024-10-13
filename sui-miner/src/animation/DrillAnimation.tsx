@@ -21,7 +21,7 @@ const DrillAnimation: React.FC = () => {
   }, [frames.length]);
 
   return (
-    <div id='drill'>
+    <div className='drill'>
       {/* Affiche l'image en fonction de l'index actuel */}
       <img
         src={frames[frameIndex]}

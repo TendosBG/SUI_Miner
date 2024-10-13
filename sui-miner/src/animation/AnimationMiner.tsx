@@ -25,7 +25,7 @@ const MinerAnimation: React.FC = () => {
   }, [frames.length]);
 
   return (
-    <div id='miner'>
+    <div className='miner'>
       {/* Affiche l'image en fonction de l'index actuel */}
       <img
         src={frames[frameIndex]}

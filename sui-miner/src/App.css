@@ -18,3 +18,9 @@
     position: relative;
     top: 4.5vh;
   }
+
+  p.level {
+    left: 12vw;
+    position: relative;
+    top: -14vh;
+  }

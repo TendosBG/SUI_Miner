@@ -9,7 +9,7 @@
   background-position: center;
 }
 
-#cart {
+.cart {
   width: 100px;
   height: 100px;
   left: 30vw; /* Start at 30% of the viewport width */

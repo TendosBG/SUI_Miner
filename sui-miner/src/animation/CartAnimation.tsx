@@ -30,7 +30,7 @@ const CartAnimation: React.FC = () => {
   }, [frames.length]);
 
   return (
-    <div id="cart">
+    <div className="cart">
       {/* Affiche l'image en fonction de l'index actuel */}
       <img
         src={frames[frameIndex]}
