@@ -12,13 +12,21 @@
     display: none;
 }
 
+.imgLock {
+    display: none;
+}
+
 .Locked{
     background-color: rgba(0, 0, 0, 0.5);
     filter: grayscale(80%);
 }
 
 .Locked .imgLock{
+    background-image: url('../images/password.png');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0);
     display:block;
+    border-radius: 50%;
     filter: grayscale(0%);
     width: 100px;
     height: 100px;
@@ -28,6 +36,20 @@
     position:absolute;
 }
 
+.imgLock :hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: grayscale(80%);
+    border: black;
+}
+
 .Locked .manager {
     top: 11vh;
 }
+.manager3 .manager {
+    top: 11vh;
+}
+
+.manager3 .miner {
+    top: 5vh;
+}
+
