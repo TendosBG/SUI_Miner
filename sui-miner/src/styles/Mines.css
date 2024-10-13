@@ -1,3 +1,5 @@
+
+
 .mines-background {
   width: 80vw; /* Adjust width for scaling properly */
   height: 33vw; /* Keep height at 50% of the viewport height */
@@ -5,4 +7,23 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+#cart {
+  width: 100px;
+  height: 100px;
+  left: 30vw; /* Start at 30% of the viewport width */
+  top:58vh;
+  position: relative;
+  animation: moveRight 4.2s infinite alternate; /* 3 secondes pour une animation infinie */
+}
+
+/* Animation pour déplacer la div de gauche à droite */
+@keyframes moveRight {
+  0% {
+    left: 25vw; /* Départ à gauche */
+  }
+  100% {
+    left: 55vw; /* Arrivée à droite sur 80% de la largeur de la fenêtre */
+  }
 }
