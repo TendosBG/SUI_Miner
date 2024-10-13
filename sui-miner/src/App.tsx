@@ -5,7 +5,8 @@ import Mine2 from './components/Mine2'
 import Mines from './components/Mines'
 import Menu from './components/Menu'
 import Mine3 from './components/Mine3';
-import React,{useEffect,useState} from 'react'
+import {useEffect,useState} from 'react'
+import { useCurrentAccount } from '@mysten/dapp-kit';
 
 
 
@@ -27,6 +28,7 @@ export function App() {
   const [coutManager3, setCoutManager3] = useState(30000);
   const [levelManager2, setLevelManager2] = useState(0);
   const [levelManager3, setLevelManager3] = useState(0);
+  const account = useCurrentAccount();
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -81,6 +83,8 @@ const handleAcheterAmelioration3 = () => {
     setCoutAmelioration3(coutAmelioration3 * 2);
     setLevelMine3(levelMine3 + 1); // Double le coût de l'amélioration à chaque niveau
   }
+
+
 };
   return (
     
@@ -100,18 +104,20 @@ const handleAcheterAmelioration3 = () => {
     </Router>
       <div id="gameContainer">
       <div>
-      <p>Vous avez {argent} pièces.</p>
-      <p>Vous avez {argent_payant} SuiCoins.</p>
-      <button onClick={handleAcheterAmelioration1}>
-        Acheter une amélioration Mine 1({coutAmelioration1} pièces) Level : ({levelMine1})
-      </button>
-      <button onClick={handleAcheterAmelioration2}>
-        Acheter une amélioration Mine 2({coutAmelioration2} pièces) Level : ({levelMine2})
-      </button>
-      <button onClick={handleManager1}>
-        Acheter un manager pour la mine 1({coutManager1} pièces) Level : ({levelManager1})
-      </button>
+        
+      {/*<p>Vous avez {argent_payant} SuiCoins.</p>*/}
+      
       </div>
+      {account ? (
+        <div id='flag2'>
+          <p>{argent} SUI tokens</p>
+        </div>
+      ) : (
+        <div id='flag3'>
+          <p>Connectez-vous pour commencer à miner</p>
+        </div>
+      )}
+        
         <Mines/>
         <Mine1 x={coutAmelioration1} y={levelMine1} z={coutManager1} a={levelManager1} handleman={handleManager1} handleame ={handleAcheterAmelioration1}/>
         <Mine2 x={coutAmelioration2} y={levelMine2} z={coutManager2} a={levelManager2} handleman={handleManager2} handleame ={handleAcheterAmelioration2}/>

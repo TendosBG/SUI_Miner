@@ -36,3 +36,40 @@
     top: -40%;
     color: white;
   }
+
+
+#flag2 p {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-size-adjust: 0.5;
+    font-weight: 700;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color:white ;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin: auto; /* Centre horizontalement */
+    position: fixed; /* Pour le centrer verticalement, vous devez également définir la hauteur du parent */
+    top: 30px; /* Pour le centrer verticalement */
+    right: 13vw;
+    border-radius: 55px;
+}
+
+
+#flag3 p {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-size-adjust: 0.7;
+    font-weight: 700;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color:white ;
+    padding-right: 80px;
+    padding-left: 80px;
+    margin: auto; /* Centre horizontalement */
+    position: fixed; /* Pour le centrer verticalement, vous devez également définir la hauteur du parent */
+    top: 25px; /* Pour le centrer verticalement */
+    left: 25vw;
+    border: solid 3.2px white;
+    border-radius: 55px;
+}

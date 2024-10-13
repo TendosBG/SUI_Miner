@@ -5,9 +5,11 @@ import CartAnimation from '../animation/CartAnimation';
 import { ConnectButton, useCurrentAccount } from '@mysten/dapp-kit';
 import { BuyButton } from './BuyButton';
 
+
 const Mines: React.FC = () => {
   const [amount, setAmount] = useState(100); // Manage state here
   const account = useCurrentAccount();
+
 
   if (!account) {
     return (
@@ -24,7 +26,9 @@ const Mines: React.FC = () => {
         </div>
 
         <CartAnimation />
-        <DisplayAmountVbux amount={amount} /> {/* Pass amount as prop */}
+        <DisplayAmountVbux amount={amount} />
+        
+         {/* Pass amount as prop */}
         {/* Contenu du composant */}
       </div>
     );

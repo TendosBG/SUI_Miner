@@ -4,7 +4,6 @@
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 20px;
-    
 }
 
 #flag p {
@@ -20,7 +19,7 @@
     margin: auto; /* Centre horizontalement */
     position: fixed; /* Pour le centrer verticalement, vous devez également définir la hauteur du parent */
     top: 25px; /* Pour le centrer verticalement */
-    left: 54vw;
+    left: 25vw;
     border: solid 3.2px white;
     border-radius: 55px;
 }
@@ -32,7 +31,7 @@
     position: fixed;
     display: block;
     top: 25px;
-    left: 50vw;
+    left: 20vw;
     background-image: url('../images/GoldenSui.png');
     background-size: cover;
     z-index: 2;
