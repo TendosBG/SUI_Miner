@@ -4,6 +4,7 @@ import Mine1 from './components/Mine1'
 import Mine2 from './components/Mine2'
 import Mines from './components/Mines'
 import Menu from './components/Menu'
+import Mine3 from './components/Mine3';
 
 
 
@@ -32,6 +33,7 @@ function App() {
         <Mines/>
         <Mine1/>
         <Mine2/>
+        <Mine3/>
         
       </div>
     </>

@@ -1,5 +1,6 @@
 #root {
     display: flex;
+    overflow-x: hidden;;
 }
 
 #gameContainer{
@@ -11,3 +12,4 @@
 #gameContainer canvas {
     display: none;
 }
+

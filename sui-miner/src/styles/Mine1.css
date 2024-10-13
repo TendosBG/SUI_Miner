@@ -13,3 +13,9 @@
   top: 10.5vh;
   position: relative;
 }
+
+#manager {
+  left:22vw;
+  position: relative;
+  top: 5vh;
+}
