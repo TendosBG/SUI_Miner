@@ -27,3 +27,9 @@
     left: 55vw; /* Arrivée à droite sur 80% de la largeur de la fenêtre */
   }
 }
+
+.web-btn {
+  right: 3vw; /* Start at 10% of the viewport width */
+  top: 5vh; /* Start at 10% of the viewport height */
+  position: absolute;
+}

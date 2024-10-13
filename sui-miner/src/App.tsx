@@ -1,5 +1,3 @@
-import { ConnectButton, useCurrentAccount } from '@mysten/dapp-kit';
-import { BuyButton } from './components/BuyButton';
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Mine1 from './components/Mine1'

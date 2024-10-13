@@ -36,4 +36,5 @@
     background-image: url('../images/GoldenSui.png');
     background-size: cover;
     z-index: 2;
+    cursor: pointer;
 }
