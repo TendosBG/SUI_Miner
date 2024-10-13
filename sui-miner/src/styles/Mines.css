@@ -29,7 +29,9 @@
 }
 
 .web-btn {
+  
   right: 3vw; /* Start at 10% of the viewport width */
-  top: 5vh; /* Start at 10% of the viewport height */
-  position: absolute;
+  top: 3.2vh; /* Start at 10% of the viewport height */
+  position: fixed;
+  
 }
