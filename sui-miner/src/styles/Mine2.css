@@ -6,3 +6,11 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+#drill {
+  left: 45vw;
+  top: 10.5vh;
+  position: relative;
+}
+
+

@@ -14,17 +14,20 @@
 
 .Locked{
     background-color: rgba(0, 0, 0, 0.5);
- 
     filter: grayscale(80%);
-  }
+}
 
- .Locked img{
+.Locked .imgLock{
     display:block;
     filter: grayscale(0%);
     width: 100px;
     height: 100px;
     align-items: center center;
-    top: 25%;
+    top: 20%;
     left: 46%;
-    position: absolute;
+    position:absolute;
+}
+
+.Locked .manager {
+    top: 11vh;
 }

@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
-const ManagerAnimation: React.FC = () => {
+const DrillAnimation: React.FC = () => {
   const [frameIndex, setFrameIndex] = useState(0);
 
   // Tableau contenant les chemins vers les images
   const frames = [
-    'manager/manager1.png',
-   'manager/manager2.png',
+    'drill/drill1.png',
+    'drill/drill2.png',
+    'drill/drill3.png',
   ];
 
   useEffect(() => {
@@ -20,15 +21,15 @@ const ManagerAnimation: React.FC = () => {
   }, [frames.length]);
 
   return (
-    <div className='manager'>
+    <div id='drill'>
       {/* Affiche l'image en fonction de l'index actuel */}
       <img
         src={frames[frameIndex]}
         alt="Animation Frame"
-        style={{ width: '35px', height: '39px' }} // Ajustez la taille de l'image selon vos besoins
+        style={{ width: '55px', height: '45px' }} // Ajustez la taille de l'image selon vos besoins
       />
     </div>
   );
 };
 
-export default ManagerAnimation;
+export default DrillAnimation;
