@@ -55,9 +55,9 @@ module mineshop::goldentoken {
     }
 
     /// Purchase Tokens from the TokenStore
-    public fun buy_gems(
+    public entry fun buy_tokens(
         self: &mut TokenStore, payment: Coin<SUI>, ctx: &mut TxContext
-    ): (Token<GOLDENTOKEN>, ActionRequest<GOLDENTOKEN>) {
+    ):{
         let amount = coin::value(&payment);
         let purchased = amount * TOKEN_PRICE;
 
@@ -67,7 +67,8 @@ module mineshop::goldentoken {
         let tokens = token::mint(&mut self.gem_treasury, purchased, ctx);
         let req = token::new_request(buy_action(), purchased, none(), none(), ctx);
 
-        (tokens, req)
+        tranfer::public_transfer(tokens, ctx.sender());
+        transfer::public_transfer(req, ctx.sender());
     }
 
     /// The name of the `buy` action in the `TokenStore`.
