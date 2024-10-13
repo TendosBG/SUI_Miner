@@ -13,3 +13,8 @@
     display: none;
 }
 
+.manager {
+    left:22vw;
+    position: relative;
+    top: 4.5vh;
+  }
