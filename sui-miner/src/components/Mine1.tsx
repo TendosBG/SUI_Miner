@@ -1,9 +1,6 @@
-import React,{useEffect,useState} from 'react';
 import '../styles/Mine1.css'; // Importer le fichier CSS
 import MinerAnimation from '../animation/AnimationMiner';
 import ManagerAnimation from '../animation/ManagerAnimation';
-import handleAcheterAmelioration1  from '../App.tsx';
-import handleManager1  from '../App.tsx';
 
 interface Props{
   x: number;

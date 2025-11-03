@@ -1,9 +1,6 @@
-import React from 'react';
 import '../styles/Mine3.css'; // Importer le fichier CSS
 import MinerAnimation from '../animation/AnimationMiner';
 import ManagerAnimation from '../animation/ManagerAnimation';
-import handleAcheterAmelioration3  from '../App.tsx';
-import handleManager3  from '../App.tsx';
 interface Props{
   x: number;
   y : number;

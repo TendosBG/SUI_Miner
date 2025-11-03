@@ -1,6 +1,5 @@
 import { Transaction } from "@mysten/sui/transactions";
 import { useSignAndExecuteTransaction, useSuiClient, useCurrentAccount } from "@mysten/dapp-kit";
-import { useNetworkVariable } from "../NetworkConfig";
 import { useState } from "react";
 import './DisplayAmountVbux.css';
 
@@ -11,7 +10,6 @@ interface BuyButtonProps {
 }
 
 export function BuyButton({ onCreated, setAmount, amount }: BuyButtonProps) {
-  const counterPackageId = useNetworkVariable("counterPackageId");
   const suiClient = useSuiClient();
   const account = useCurrentAccount();
   const [loading, setLoading] = useState(false);
@@ -32,8 +30,12 @@ export function BuyButton({ onCreated, setAmount, amount }: BuyButtonProps) {
     setLoading(true);
 
     try {
+      if (!account?.address) {
+        console.error("No account connected");
+        return;
+      }
       const coins = await suiClient.getCoins({
-        owner: account?.address, // Ensure account is not null or undefined
+        owner: account.address, // Ensure account is not null or undefined
         coinType: '0x2::sui::SUI',
       });
 
@@ -60,7 +62,7 @@ export function BuyButton({ onCreated, setAmount, amount }: BuyButtonProps) {
           onSuccess: (result) => {
             setAmount(amount + 10); // Update the amount
             console.log("Transaction executed", result);
-            onCreated(result.txId); // Report the transaction ID
+            onCreated(result.digest); // Report the transaction digest as ID
           },
           onError: (error) => {
             setAmount(amount + 10); // Update the amount

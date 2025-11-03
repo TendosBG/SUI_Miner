@@ -1,12 +1,10 @@
 class Manager {
 
-    private buyCost: number;
     private boostRate: number;
     private activated: boolean;
 
-    constructor(buyCost = 100, boostRate = 2, activated = false){
+    constructor(_buyCost = 100, boostRate = 2, activated = false){
         this.boostRate = boostRate;
-        this.buyCost = buyCost;
         this.activated = activated;
     }
     isActivated(): number{
@@ -23,18 +21,10 @@ class Manager {
 
 class Mine {
     private level: number;
-    private mineCost: number;
-    private mineIncome: number;
-    private mineIncomePerSecond: number;
-    private initialCost: number;
     private initialMineIncome : number;
 
-    constructor(level = 1, mineCost = 10, mineIncome = 10, mineIncomePerSecond = 10, initialCost = 10, initialMineIncome = 10) {
+    constructor(level = 1, _mineCost = 10, _mineIncome = 10, _mineIncomePerSecond = 10, _initialCost = 10, initialMineIncome = 10) {
         this.level = level;
-        this.mineCost = mineCost;
-        this.mineIncome = mineIncome;
-        this.mineIncomePerSecond = mineIncomePerSecond;
-        this.initialCost = initialCost;
         this.initialMineIncome  = initialMineIncome 
     }
     upgrade(){
@@ -42,9 +32,8 @@ class Mine {
     }
 
     updateMine(){
-        this.mineCost = this.initialCost * (this.level**1.15);
-        this.mineIncome = this.initialMineIncome * (this.level**1.10);
-        this.mineIncomePerSecond = this.mineIncome / 4
+        // Intentionally left minimal until consumption points are implemented
+        void (this.initialMineIncome * (this.level**1.10));
     }
 
 }

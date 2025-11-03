@@ -1,9 +1,6 @@
-import React from 'react';
 import '../styles/Mine2.css'; // Importer le fichier CSS
 import DrillAnimation from '../animation/DrillAnimation';
 import ManagerAnimation from '../animation/ManagerAnimation';
-import handleAcheterAmelioration2  from '../App.tsx';
-import handleManager2  from '../App.tsx';
 
 interface Props{
   x: number;
